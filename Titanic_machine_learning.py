@@ -5,6 +5,8 @@ from sklearn.model_selection import StratifiedShuffleSplit, cross_val_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
+# Need to add more model and compare its accuracy.
+
 # # Data preprocessing
 titanic_data = pd.read_csv('F:/titanic.csv')  # Load The dataset.
 titanic_data['Male'] = list(map(int, titanic_data['Sex'] == 'male'))
